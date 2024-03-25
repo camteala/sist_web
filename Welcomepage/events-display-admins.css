@@ -1,0 +1,382 @@
+body{
+    font-family: tahoma;
+    margin: 0;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+body { perspective: 35em; }
+.speech-bubble {
+  position: relative;
+  margin: .5em auto;
+  padding: 1em;
+  width: 20em; height: 4em;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(2deg);
+  background: #72dd76;
+  font: 30px Century Gothic, Verdana, sans-serif;
+  text-align: center;
+  padding-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.speech-bubble:before, .speech-bubble:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+.speech-bubble:after {
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #f4fefa;
+}
+.speech-bubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fefa;
+  border-bottom: solid .25em #72dd76;
+  bottom: .25em; left: 1.25em;
+  width: 0; height: 1em;
+  transform: rotate(45deg) skewX(75deg);
+}
+
+.wrapper{
+    width: 98%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: auto;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.225), rgba(0,0,0,0.4)), url('cardiff.jpg');
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.566);
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+  
+}
+
+.sist{
+    max-width: 120px;
+    max-height: 120px;
+    margin-right: 10px;
+    margin-top: -4;
+    background-size: fixed;
+}
+
+nav ul li:hover{
+    background-color: rgb(8, 19, 73);
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.section{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 4%;
+    padding: 30px;
+    color: aliceblue;
+    
+}
+
+.event-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+.template{
+  width: 100%;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  
+}
+ 
+  
+
+.template h1 {
+
+
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 40px;
+  font-family:cursive
+}
+
+.template h1:after {
+  display: inline-block;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #999;
+  width: 140px;
+}
+
+.template h1:before {
+  display: inline-block;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #999;
+  width: 140px;
+}
+
+.event-template {
+  width: 800px;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  border: solid 2px transparent ;
+  border-radius: 20px;
+  margin-bottom: 70px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  background-color: #fff;
+ 
+}
+
+.template .event-template:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.template-image{
+  width:45%;
+  height: 100%;
+
+ 
+}
+
+.template-image img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.event-template-container{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+.event-name{
+  width:100%;
+  height:25%;
+  display: flex;
+  align-items: center;
+  font-family:Book Antiqua ;
+}
+
+.event-name h2{
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event-description{
+  width:100%;
+  height:35%;
+  
+}
+.event-description p{
+  margin: 20px 20px 0 20px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 17px;
+}
+.event-date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+}
+
+.event-date h5{
+  font-size: 12px;
+  background-color: rgb(170, 190, 176) ;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.Readmore{
+  width:100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.Readmore :hover{
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8);
+      transition: 1s ease;
+      cursor: pointer;
+      background-color: rgb(0, 0, 0);
+      
+    }
+
+
+.Readmore a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  background-color: darkblue;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.delete{
+    
+    width: 20%;
+    padding: 10px 15px;
+    font-size: 90%;
+    cursor: pointer;
+    display: block;
+    background: red;
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    transition: .5s;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.delete:hover{
+    background: darkred;
+    border-color: darkred;
+    transform: scale(1.1);
+}
+
+.edit{
+  
+  width: 20%;
+  padding: 10px;
+  font-size: 90%;
+  cursor: pointer;
+  display: block;
+  background: rgb(25, 189, 20);
+  border:0;
+  outline: none;
+  border-radius: 30px;
+  transition: .5s;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.edit:hover{
+  background: #06460f;
+  border-color: #06460f;
+  transform: scale(1.1);
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+}
+
+.contact1{
+  width: 40px;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #000;
+}
+
+.container1{
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+footer{
+  background-color:  #8fe0be;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 30%;
+  width: relative;
+  
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .template .event-template{
+    width: 70%;
+    height:auto;
+  }
+  .template .event-name h2{
+    font-size: 20px;
+  }
+  .template .event-date h5{
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  .template .event-description p{
+    font-size: 10px;
+    -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  }
+  .template-image img{
+  
+    width: 100%;
+    height: 100%;
+  }
+  .Readmore{
+    font-size: small;
+  }
+  .Readmore a{
+    margin-top: 20px;
+    width: 30%;
+    font-size: 7px;
+  }
+  
+}

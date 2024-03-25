@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    width: 100%;
+    height: 250%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('wales.jpg');
+
+}
+
+body{
+    font-size: 16px;
+    font-family: system-ui;
+    
+}
+
+
+h2{
+    text-align: center;
+    color: #20BF55;
+}
+
+form{
+    width: 500px;
+    padding: 15px 40px 40px;
+    border:2px solid #20BF55;
+    border-radius: 5px;
+    background-color: white;
+    margin: 4% auto;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,select{
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color:#a9bae64a ;
+}
+.box{
+    padding-bottom: 10px;
+}
+.form-inline{
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 2px;
+}
+.form-inline label,.form-inline input{
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error{
+    color: red;
+    font-size: 90%;
+}
+input[type="text"]{
+    outline: none;
+}
+
+
+.submit{
+    width: 40%;
+    padding: 10px 30px;
+    font-size: 90%;
+    cursor: pointer;
+    display: block;
+    background: linear-gradient(to right,#20BF55,#01BAEF);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    float: left;
+    transition: .5s;
+}
+.submit:hover{
+    background: #20BF55;
+    border-color: #20BF55;
+
+}
+.reset{
+    width: 40%;
+    padding: 10px 30px;
+    font-size: 90%;
+    cursor: pointer;
+    display: block;
+    background: linear-gradient(to right,#20BF55,#01BAEF);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+    float: right;
+    transition: .5s;
+}
+.reset:hover{
+    background: #20BF55;
+    border-color: #20BF55;
+}
+    
+footer{
+    background-color: #20BF55;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 4%;
+    
+    
+}
+.sist{
+    max-width: 120px;
+    max-height: 120px;
+    margin-right: 10px;
+    margin-top: -4;
+    background-size: fixed;
+}
+
+.container{
+    width: 40px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.contact{
+    width: 50px;
+    padding: 10px 30px;
+    font-size: large;
+    font-weight: 700;
+    font-family: Bodoni;
+}
+
+.login_form #email_error,
+.login_form #pass_error,
+.login_form #fname_error,
+.login_form #lname_error,
+.login_form #uname_error,
+.login_form #mobile_error,
+.login_form #address_error,
+.login_form #post_error{
+    margin-top: 5px;
+    width: 97%;
+    font-size: 14px;
+    color: #c62828;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius:3px ;
+    border: 1px solid #ef9a9a;
+    display: none;
+
+}
+
+
